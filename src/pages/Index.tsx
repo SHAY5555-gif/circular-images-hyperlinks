@@ -65,8 +65,8 @@ const Index = () => {
               <CircularLink 
                 to="/products" 
                 imageUrl="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Products" 
-                label="Products"
+                alt="Suno" 
+                label="Suno"
                 size="lg"
               />
             </div>
@@ -75,8 +75,8 @@ const Index = () => {
               <CircularLink 
                 to="/gallery" 
                 imageUrl="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Gallery" 
-                label="Gallery"
+                alt="Eleven Labs" 
+                label="Eleven Labs"
                 size="lg"
               />
             </div>
@@ -85,8 +85,8 @@ const Index = () => {
               <CircularLink 
                 to="/about" 
                 imageUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="About Us" 
-                label="About Us"
+                alt="Immersive Translate" 
+                label="Immersive Translate"
                 size="lg"
               />
             </div>
@@ -95,8 +95,8 @@ const Index = () => {
               <CircularLink 
                 to="/contact" 
                 imageUrl="https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Contact" 
-                label="Contact"
+                alt="Gamma" 
+                label="Gamma"
                 size="lg"
               />
             </div>
