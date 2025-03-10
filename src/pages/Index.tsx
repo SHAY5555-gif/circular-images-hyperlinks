@@ -84,7 +84,7 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{animationDelay: '0.3s'}}>
               <CircularLink 
                 to="/about" 
-                imageUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                imageUrl="/lovable-uploads/afdb659f-1bed-4149-a6bd-d8ec85e040c8.png" 
                 alt="Immersive Translate" 
                 label="Immersive Translate"
                 size="lg"
