@@ -63,7 +63,7 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
               <CircularLink 
                 to="/products" 
-                imageUrl="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                imageUrl="/lovable-uploads/c4f29b5c-7ce6-42e6-b997-164d169a5d12.png" 
                 alt="Suno" 
                 label="Suno"
                 size="lg"
