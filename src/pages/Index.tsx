@@ -22,7 +22,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 md:py-0">
+      <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 md:py-0 bg-slate-200">
         <div className="container mx-auto text-center space-y-6 max-w-3xl animate-fade-in rounded-none">
           <span className="inline-block text-sm font-medium bg-secondary px-3 py-1 rounded-full">
             Modern Design Collection
