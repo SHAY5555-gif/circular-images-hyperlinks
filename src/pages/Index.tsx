@@ -3,7 +3,6 @@ import CircularLink from '@/components/CircularLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ArrowDown } from 'lucide-react';
-
 const Index = () => {
   useEffect(() => {
     // Smooth scroll for internal anchor links
@@ -19,28 +18,21 @@ const Index = () => {
       });
     });
   }, []);
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
       
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 md:py-0">
-        <div className="container mx-auto text-center space-y-6 max-w-3xl animate-fade-in">
+        <div className="container mx-auto text-center space-y-6 max-w-3xl animate-fade-in rounded-none">
           <span className="inline-block text-sm font-medium bg-secondary px-3 py-1 rounded-full">
             Modern Design Collection
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-            Explore Our Collection Through Circular Portals
-          </h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-center">קבל קישורי הפניה עם הנחות
+ וקרדיטים בחינם</h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Each circle leads to a new experience. Discover our products, galleries, and philosophy through an innovative interface.
           </p>
-          <a 
-            href="#gallery"
-            className="inline-flex items-center justify-center mt-6 hover:opacity-90 transition-opacity"
-            aria-label="Scroll to gallery"
-          >
+          <a href="#gallery" className="inline-flex items-center justify-center mt-6 hover:opacity-90 transition-opacity" aria-label="Scroll to gallery">
             <ArrowDown className="animate-float w-10 h-10" />
           </a>
         </div>
@@ -60,44 +52,28 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 justify-items-center">
-            <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-              <CircularLink 
-                to="/products" 
-                imageUrl="/lovable-uploads/c4f29b5c-7ce6-42e6-b997-164d169a5d12.png" 
-                alt="Suno" 
-                label="Suno"
-                size="lg"
-              />
+            <div className="animate-fade-in-up" style={{
+            animationDelay: '0.1s'
+          }}>
+              <CircularLink to="/products" imageUrl="/lovable-uploads/c4f29b5c-7ce6-42e6-b997-164d169a5d12.png" alt="Suno" label="Suno" size="lg" />
             </div>
             
-            <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              <CircularLink 
-                to="/gallery" 
-                imageUrl="/lovable-uploads/f0e2e10c-14bd-44e7-99ba-cdafc25eff64.png" 
-                alt="Eleven Labs" 
-                label="Eleven Labs"
-                size="lg"
-              />
+            <div className="animate-fade-in-up" style={{
+            animationDelay: '0.2s'
+          }}>
+              <CircularLink to="/gallery" imageUrl="/lovable-uploads/f0e2e10c-14bd-44e7-99ba-cdafc25eff64.png" alt="Eleven Labs" label="Eleven Labs" size="lg" />
             </div>
             
-            <div className="animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-              <CircularLink 
-                to="/about" 
-                imageUrl="/lovable-uploads/afdb659f-1bed-4149-a6bd-d8ec85e040c8.png" 
-                alt="Immersive Translate" 
-                label="Immersive Translate"
-                size="lg"
-              />
+            <div className="animate-fade-in-up" style={{
+            animationDelay: '0.3s'
+          }}>
+              <CircularLink to="/about" imageUrl="/lovable-uploads/afdb659f-1bed-4149-a6bd-d8ec85e040c8.png" alt="Immersive Translate" label="Immersive Translate" size="lg" />
             </div>
             
-            <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-              <CircularLink 
-                to="/contact" 
-                imageUrl="https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Gamma" 
-                label="Gamma"
-                size="lg"
-              />
+            <div className="animate-fade-in-up" style={{
+            animationDelay: '0.4s'
+          }}>
+              <CircularLink to="/contact" imageUrl="https://images.unsplash.com/photo-1579547621706-1a9c79d5c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gamma" label="Gamma" size="lg" />
             </div>
           </div>
         </div>
@@ -140,44 +116,30 @@ const Index = () => {
             </div>
             
             <div className="grid grid-cols-2 gap-6">
-              <div className="animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-                <CircularLink 
-                  to="#" 
-                  imageUrl="https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Design" 
-                  label="Design"
-                  size="md"
-                />
+              <div className="animate-fade-in-up" style={{
+              animationDelay: '0.1s'
+            }}>
+                <CircularLink to="#" imageUrl="https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Design" label="Design" size="md" />
               </div>
               
-              <div className="animate-fade-in-up" style={{animationDelay: '0.2s', marginTop: '2rem'}}>
-                <CircularLink 
-                  to="#" 
-                  imageUrl="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Innovation" 
-                  label="Innovation"
-                  size="md"
-                />
+              <div className="animate-fade-in-up" style={{
+              animationDelay: '0.2s',
+              marginTop: '2rem'
+            }}>
+                <CircularLink to="#" imageUrl="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Innovation" label="Innovation" size="md" />
               </div>
               
-              <div className="animate-fade-in-up" style={{animationDelay: '0.3s', marginTop: '-2rem'}}>
-                <CircularLink 
-                  to="#" 
-                  imageUrl="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Technology" 
-                  label="Technology"
-                  size="md"
-                />
+              <div className="animate-fade-in-up" style={{
+              animationDelay: '0.3s',
+              marginTop: '-2rem'
+            }}>
+                <CircularLink to="#" imageUrl="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Technology" label="Technology" size="md" />
               </div>
               
-              <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
-                <CircularLink 
-                  to="#" 
-                  imageUrl="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Quality" 
-                  label="Quality"
-                  size="md"
-                />
+              <div className="animate-fade-in-up" style={{
+              animationDelay: '0.4s'
+            }}>
+                <CircularLink to="#" imageUrl="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Quality" label="Quality" size="md" />
               </div>
             </div>
           </div>
@@ -185,8 +147,6 @@ const Index = () => {
       </section>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
