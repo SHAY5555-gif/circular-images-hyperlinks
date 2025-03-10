@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import CircularLink from '@/components/CircularLink';
 import Header from '@/components/Header';
@@ -74,7 +73,7 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <CircularLink 
                 to="/gallery" 
-                imageUrl="https://images.unsplash.com/photo-1516575334481-f85287c2c82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                imageUrl="/lovable-uploads/f0e2e10c-14bd-44e7-99ba-cdafc25eff64.png" 
                 alt="Eleven Labs" 
                 label="Eleven Labs"
                 size="lg"
