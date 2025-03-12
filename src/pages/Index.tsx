@@ -31,7 +31,7 @@ const Index = () => {
             Modern Design Collection
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-center">קבל קישורי הפניה עם הנחות
- וקרדיטים בחינם</h1>
+ וקרדיטים בחינם</h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Each circle leads to a new experience. Discover our products, galleries, and philosophy through an innovative interface.
           </p>
@@ -64,7 +64,7 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{
             animationDelay: '0.2s'
           }}>
-              <CircularLink to="/gallery" imageUrl="/lovable-uploads/5a7a874f-8dcb-4ee2-9152-00633a53a764.png" alt="Eleven Labs" label="Eleven Labs" size="lg" />
+              <CircularLink to="/gallery" imageUrl="/lovable-uploads/f0e2e10c-14bd-44e7-99ba-cdafc25eff64.png" alt="Eleven Labs" label="Eleven Labs" size="lg" />
             </div>
             
             <div className="animate-fade-in-up" style={{
@@ -76,7 +76,7 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{
             animationDelay: '0.4s'
           }}>
-              <CircularLink to="/contact" imageUrl="/lovable-uploads/f0e2e10c-14bd-44e7-99ba-cdafc25eff64.png" alt="Gamma" label="Gamma" size="lg" />
+              <CircularLink to="/contact" imageUrl="/lovable-uploads/5a7a874f-8dcb-4ee2-9152-00633a53a764.png" alt="Gamma" label="Gamma" size="lg" />
             </div>
           </div>
         </div>
