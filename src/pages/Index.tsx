@@ -3,6 +3,7 @@ import CircularLink from '@/components/CircularLink';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { ArrowDown } from 'lucide-react';
+
 const Index = () => {
   useEffect(() => {
     // Smooth scroll for internal anchor links
@@ -18,6 +19,7 @@ const Index = () => {
       });
     });
   }, []);
+
   return <div className="min-h-screen flex flex-col">
       <Header />
       
@@ -61,7 +63,7 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{
             animationDelay: '0.2s'
           }}>
-              <CircularLink to="/gallery" imageUrl="/lovable-uploads/f0e2e10c-14bd-44e7-99ba-cdafc25eff64.png" alt="Eleven Labs" label="Eleven Labs" size="lg" />
+              <CircularLink to="/gallery" imageUrl="/lovable-uploads/5a7a874f-8dcb-4ee2-9152-00633a53a764.png" alt="Eleven Labs" label="Eleven Labs" size="lg" />
             </div>
             
             <div className="animate-fade-in-up" style={{
@@ -149,4 +151,5 @@ const Index = () => {
       <Footer />
     </div>;
 };
+
 export default Index;
