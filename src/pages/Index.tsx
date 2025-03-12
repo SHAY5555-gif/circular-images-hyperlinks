@@ -64,7 +64,14 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{
             animationDelay: '0.2s'
           }}>
-              <CircularLink to="/gallery" imageUrl="/lovable-uploads/f0e2e10c-14bd-44e7-99ba-cdafc25eff64.png" alt="Eleven Labs" label="Eleven Labs" size="lg" />
+              <CircularLink 
+                to="https://try.elevenlabs.io/o8uy3iiswcc0" 
+                imageUrl="/lovable-uploads/f0e2e10c-14bd-44e7-99ba-cdafc25eff64.png" 
+                alt="Eleven Labs" 
+                label="Eleven Labs" 
+                size="lg" 
+                isExternal={true}
+              />
             </div>
             
             <div className="animate-fade-in-up" style={{

@@ -10,6 +10,7 @@ interface CircularLinkProps {
   label: string;
   size?: 'sm' | 'md' | 'lg';
   className?: string;
+  isExternal?: boolean;
 }
 
 const CircularLink: React.FC<CircularLinkProps> = ({
@@ -19,6 +20,7 @@ const CircularLink: React.FC<CircularLinkProps> = ({
   label,
   size = 'md',
   className,
+  isExternal = false,
 }) => {
   const [isHovering, setIsHovering] = useState(false);
   
@@ -28,14 +30,33 @@ const CircularLink: React.FC<CircularLinkProps> = ({
     lg: 'w-52 h-52 md:w-64 md:h-64',
   };
 
-  return (
-    <div className="flex flex-col items-center gap-3">
+  const LinkComponent = isExternal ? 
+    ({ children }: { children: React.ReactNode }) => (
+      <a 
+        href={to} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-full"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
+        {children}
+      </a>
+    ) : 
+    ({ children }: { children: React.ReactNode }) => (
       <Link 
         to={to}
         className="focus:outline-none focus:ring-2 focus:ring-primary/50 rounded-full"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
+        {children}
+      </Link>
+    );
+
+  return (
+    <div className="flex flex-col items-center gap-3">
+      <LinkComponent>
         <div 
           className={cn(
             'image-wrapper shine-effect smooth-transition', 
@@ -56,12 +77,14 @@ const CircularLink: React.FC<CircularLinkProps> = ({
             )}
           />
         </div>
-      </Link>
+      </LinkComponent>
       <span 
+        onClick={() => isExternal && window.open(to, '_blank', 'noopener,noreferrer')}
         className={cn(
           'font-medium text-center smooth-transition bg-gradient-to-r from-foreground to-foreground',
           'link-hover',
-          isHovering ? 'text-primary' : 'text-muted-foreground'
+          isHovering ? 'text-primary' : 'text-muted-foreground',
+          isExternal && 'cursor-pointer'
         )}
       >
         {label}
