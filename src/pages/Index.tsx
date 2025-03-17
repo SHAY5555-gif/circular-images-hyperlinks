@@ -77,7 +77,14 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{
             animationDelay: '0.3s'
           }}>
-              <CircularLink to="/about" imageUrl="/lovable-uploads/afdb659f-1bed-4149-a6bd-d8ec85e040c8.png" alt="Immersive Translate" label="Immersive Translate" size="lg" />
+              <CircularLink 
+                to="https://immersivetranslate.com/?via=free" 
+                imageUrl="/lovable-uploads/afdb659f-1bed-4149-a6bd-d8ec85e040c8.png" 
+                alt="Immersive Translate" 
+                label="Immersive Translate" 
+                size="lg" 
+                isExternal={true}
+              />
             </div>
             
             <div className="animate-fade-in-up" style={{
