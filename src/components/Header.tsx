@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  
   const navLinks = [{
     path: '/',
     label: 'Home'
@@ -22,6 +24,7 @@ const Header: React.FC = () => {
     path: '/contact',
     label: 'Contact'
   }];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -29,14 +32,16 @@ const Header: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
+
   return <header className={cn('fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-4 transition-all duration-300', isScrolled ? 'glass-morphism' : 'bg-transparent')}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-semibold tracking-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary text-base font-normal text-left">תוכנית שותפים</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary text-xl md:text-2xl font-normal text-left">תוכנית שותפים</span>
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -51,7 +56,6 @@ const Header: React.FC = () => {
         </div>
       </div>
       
-      {/* Mobile menu */}
       {isMobileMenuOpen && <div className="md:hidden fixed inset-0 top-16 z-40 glass-morphism animate-fade-in-up pt-4">
           <nav className="flex flex-col items-center justify-center space-y-6 h-full">
             {navLinks.map(link => <Link key={link.path} to={link.path} className={cn('text-lg font-medium transition-colors', location.pathname === link.path ? 'text-primary' : 'text-muted-foreground')}>
@@ -61,4 +65,5 @@ const Header: React.FC = () => {
         </div>}
     </header>;
 };
+
 export default Header;
