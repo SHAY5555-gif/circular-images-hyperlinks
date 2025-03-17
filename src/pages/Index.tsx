@@ -58,7 +58,14 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{
             animationDelay: '0.1s'
           }}>
-              <CircularLink to="/products" imageUrl="/lovable-uploads/c4f29b5c-7ce6-42e6-b997-164d169a5d12.png" alt="Suno" label="Suno" size="lg" />
+              <CircularLink 
+                to="https://suno.com/invite/@rusticvibration177" 
+                imageUrl="/lovable-uploads/c4f29b5c-7ce6-42e6-b997-164d169a5d12.png" 
+                alt="Suno" 
+                label="Suno" 
+                size="lg" 
+                isExternal={true}
+              />
             </div>
             
             <div className="animate-fade-in-up" style={{
