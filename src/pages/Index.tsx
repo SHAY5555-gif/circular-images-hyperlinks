@@ -90,7 +90,14 @@ const Index = () => {
             <div className="animate-fade-in-up" style={{
             animationDelay: '0.4s'
           }}>
-              <CircularLink to="/contact" imageUrl="/lovable-uploads/5a7a874f-8dcb-4ee2-9152-00633a53a764.png" alt="Gamma" label="Gamma" size="lg" />
+              <CircularLink 
+                to="https://gamma.app/signup?r=a4kvpoca9exx96j" 
+                imageUrl="/lovable-uploads/5a7a874f-8dcb-4ee2-9152-00633a53a764.png" 
+                alt="Gamma" 
+                label="Gamma" 
+                size="lg" 
+                isExternal={true}
+              />
             </div>
           </div>
         </div>
