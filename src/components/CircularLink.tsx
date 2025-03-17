@@ -54,6 +54,12 @@ const CircularLink: React.FC<CircularLinkProps> = ({
       </Link>
     );
 
+  const handleLabelClick = () => {
+    if (isExternal) {
+      window.open(to, '_blank', 'noopener,noreferrer');
+    }
+  };
+
   return (
     <div className="flex flex-col items-center gap-3">
       <LinkComponent>
@@ -79,7 +85,7 @@ const CircularLink: React.FC<CircularLinkProps> = ({
         </div>
       </LinkComponent>
       <span 
-        onClick={() => isExternal && window.open(to, '_blank', 'noopener,noreferrer')}
+        onClick={handleLabelClick}
         className={cn(
           'font-medium text-center smooth-transition bg-gradient-to-r from-foreground to-foreground',
           'link-hover',
