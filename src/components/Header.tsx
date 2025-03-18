@@ -36,7 +36,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-semibold tracking-tight">
-            <span className="bg-clip-text bg-gradient-to-r from-primary to-primary md:text-2xl text-left font-normal text-2xl text-gray-900">תוכנית שותפים</span>
+            
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
