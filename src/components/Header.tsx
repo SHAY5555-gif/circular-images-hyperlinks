@@ -41,9 +41,7 @@ const Header: React.FC = () => {
   return <header className={cn('fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-4 transition-all duration-300', isScrolled ? 'glass-morphism' : 'bg-transparent')}>
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-semibold tracking-tight">
-            {/* Empty Link with no span content */}
-          </Link>
+          <Link to="/" className="text-2xl font-semibold tracking-tight"></Link>
           
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map(link => <Link key={link.path} to={link.path} className={cn('text-sm font-medium transition-colors hover:text-primary', 'link-hover bg-gradient-to-r from-primary to-primary', location.pathname === link.path ? 'text-primary' : 'text-muted-foreground')}>
