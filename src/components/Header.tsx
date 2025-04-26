@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -47,7 +46,6 @@ const Header: React.FC = () => {
                 key={link.path}
                 className={cn(
                   'text-sm font-medium transition-colors', 
-                  'link-hover bg-gradient-to-r from-primary to-primary', 
                   location.pathname === link.path ? 'text-primary' : 'text-muted-foreground'
                 )}
               >
