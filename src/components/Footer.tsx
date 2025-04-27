@@ -1,10 +1,7 @@
 import React from 'react';
-
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="py-12 px-6 border-t border-border/50">
+  return <footer className="py-12 px-6 border-t border-border/50">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="space-y-4">
@@ -19,7 +16,7 @@ const Footer: React.FC = () => {
             <nav className="flex flex-col space-y-2">
               <span className="text-sm text-muted-foreground cursor-default">Home</span>
               <span className="text-sm text-muted-foreground cursor-default">Products</span>
-              <span className="text-sm text-muted-foreground cursor-default">Gallery</span>
+              
               <span className="text-sm text-muted-foreground cursor-default">About</span>
               <span className="text-sm text-muted-foreground cursor-default">Contact</span>
             </nav>
@@ -59,8 +56,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
